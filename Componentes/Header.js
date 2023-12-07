@@ -89,7 +89,7 @@ function ResponsiveAppBar() {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => {
+                            {pages.map((page,index) => {
                                 return (
                                     <MenuItem key={page} onClick={(e) => { handleCloseNavMenu(e) }}>
                                         <Typography textAlign="center">{page}</Typography>
